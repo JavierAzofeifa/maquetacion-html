@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    width: max-content;
+    width: 350px;
+    margin: 55px auto;
+}
+
+.card_header{
+    font-weight: 600;
+}
+
+.card_container{
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+
+.card_title{
+    padding-left: 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin:  20px 0 10px 0;
+}
+
+.card_suptitle{
+    padding-left: 15px;
+    color: #A3A3A3;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card_article p{
+    padding: 5px 15px;
+    color: #5C5C5C;
+}
+
+.card_list {
+    margin: 0 15px 25px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card_list a{
+    text-decoration: none;
+    color: #3173DC;
+    list-style: none;
+    font-weight: 400; 
+    padding: 7.5px 10px;
+    border-radius: 5px;
+}
+
+.card_list a:focus {
+    background-color: #3272DB;
+    color: white;
+}
+
+.card_list_item {
+    color: inherit;
+    transition: filter,transform 500ms ease;
+}
+
+.card_list_item:hover {
+    filter: brightness(1.25);
+    transform: scale(1.1);
+    transition: filter,transform 500ms ease;
+}

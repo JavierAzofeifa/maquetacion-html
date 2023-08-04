@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    width: max-content;
+    width: 350px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DEDEDE;
+}
+
+.card_title{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card_container{
+    padding: 15px;
+}
+
+.card_footer{
+    border: 1px solid #DEDEDE;
+}
+
+.card_photo img{
+    width: 100%;
+}
+
+.card_footer_title{
+    margin: 20px 15px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.card_text{
+    margin: 10px 15px;
+}
+
+.card_button{
+    margin: 20px 15px;
+    border: none;
+    background-color: #3272db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: filter, transform 500ms ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card_button:hover{
+    filter: brightness(1.25);
+    transform: scale(1.1);
+    transition: filter, transform 500ms ease;
+}
+
+.card_button::after{
+    content: "";
+    background: url(/img/arrow_icon2.png)no-repeat;
+    background-size: 100%;
+    width: 8px;
+    aspect-ratio: 1;
+    display: block;
+    margin-left: 10px;
+}

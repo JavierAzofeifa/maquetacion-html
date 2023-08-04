@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    width: 100%;
+    width: max-content;
+    margin: 55px auto;
+}
+
+.card_title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card_container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.card_list{
+    display: flex;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #F0F0F0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card_list a{
+    text-decoration: none;
+    padding: 0 0 0 30px;
+    color: #3173DC;
+    font-size: 1.3rem;
+}
+
+.card_list a:focus {
+    background-color: #3272DB;
+    color: white;
+}
+
+.card_list_item {
+    color: inherit;
+    transition: filter,transform 500ms ease;
+}
+
+.card_list_item:hover {
+    filter: brightness(1.25);
+    transform: scale(1.1);
+    transition: filter,transform 500ms ease;
+}
+
+.card_footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card_footer_title{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0px 0;
+}
+
+.card_text{
+    width: 80%;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card_button{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    background-color: #3272DC;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: filter,transform 500ms ease;
+}
+
+.card_button:hover {
+    filter: brightness(1.25);
+    transform: scale(1.1);
+    transition: filter,transform 500ms ease;
+}
+
+.card_button::after {
+    content: "";
+    background: url("/img/arrow_icon2.png")no-repeat;
+    background-size: 100%;
+    width: 15px;
+    aspect-ratio: 1;
+    display: block;
+    margin-left: 10px;
+}
